@@ -1,0 +1,19 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="utf-8" />
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <title>Page Title</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+
+</head>
+<body>
+  <!--直接在浏览器本地打开就可以测试jsonp效果了-->
+  <script>
+    function doSomething(jsonpData) {
+      console.log(jsonpData);
+    }
+  </script>
+  <script src="http://localhost:3000/?cb=doSomething"></script>
+</body>
+</html>
